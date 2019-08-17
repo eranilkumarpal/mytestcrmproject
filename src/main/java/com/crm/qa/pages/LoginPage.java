@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.TestBase;
+import com.crm.qa.util.TestUtil;
 
 public class LoginPage extends TestBase {
 
@@ -46,12 +47,13 @@ public class LoginPage extends TestBase {
 		username.sendKeys(un);
 		password.sendKeys(pw);
 		try {
-			Thread.sleep(2000);
+		Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		loginBtn.click();
+		//TestUtil.onClick(driver, loginBtn, 20);
+		//.click();
 		return new HomePage();
 	}
 }
