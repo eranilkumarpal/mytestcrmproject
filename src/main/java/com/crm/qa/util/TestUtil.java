@@ -18,10 +18,10 @@ public class TestUtil extends TestBase {
 	public static long IMPLICITLY_WAIT = 10;
 	
 
-	public static void onClick(WebDriver driver, WebElement locator, int timeout) {
+	/*public static void onClick(WebDriver driver, WebElement locator, int timeout) {
 
 		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
 				.until(ExpectedConditions.elementToBeClickable(locator));
-		locator.click();
+		locator.click();*/
 	}
 }
